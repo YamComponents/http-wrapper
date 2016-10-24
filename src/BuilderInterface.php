@@ -46,15 +46,6 @@ interface BuilderInterface
 	public function request($path);
 
 	/**
-	 * create new instance of builder
-	 *
-	 * factory method
-	 *
-	 * @return static
-	 */
-	public function create();
-
-	/**
 	 * @param array $queryParams
 	 *
 	 * @return BuilderInterface

@@ -85,11 +85,6 @@ class Builder implements BuilderInterface
 		return $new;
 	}
 
-	public function create()
-	{
-		return new static;
-	}
-
 	/**
 	 * @param array $queryParams
 	 *
