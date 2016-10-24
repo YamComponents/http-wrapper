@@ -1,0 +1,21 @@
+{
+  "name": "yamc/http-wrapper",
+  "description": "Guzzle 6 and PSR7 wrapper aimed to simplify API client code",
+  "type": "library",
+  "require": {
+    "guzzlehttp/guzzle": "^6.0",
+    "psr/http-message": "^1.0"
+  },
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Roman Bulgakov",
+      "email": "dik.deroy@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "yamc\\http\\wrapper\\": "src/"
+    }
+  }
+}
