@@ -123,7 +123,7 @@ class Handler implements HandlerInterface
 			$result = 0; //raise result to silent if exceptions are muted
 
 		if ($result < 0) {
-			$message = 'IMS upstream fail';
+			$message = 'upstream fail';
 			switch ($response->getStatusCode()) {
 				case 404:
 					$code = Exception::NOT_FOUND;
@@ -144,7 +144,6 @@ class Handler implements HandlerInterface
 			throw new Exception(
 				$message . ':' . $httpError,
 				$code,
-				$httpError,
 				isset($e) ? $e : null);
 		}
 
